@@ -40,6 +40,7 @@ void initStrings() {
   MQTT_PW = "CONTACT US at talegur@ait.co.th for credentials";
   SENSOR_NAME = "Up tp you";
   SENSOR_TYPE = "CONTACT US at talegur@ait.co.th for credentials";
+  SENSOR_TYPE_FOR_TOPIC = "CONTACT US at talegur@ait.co.th for credentials";
   SENSOR_ID = "CONTACT US at talegur@ait.co.th for credentials";
   O_TOPIC = "CONTACT US at talegur@ait.co.th for credentials";
   C_RESP = "CONTACT US at talegur@ait.co.th for credentials";
@@ -146,7 +147,7 @@ boolean readAndPublish() {
   boolean rc = getDataPoint(30, 150);
   SensorOperationsObject(payload, String(SENSOR_ID), String(dataPoint.value));
   Serial.println(payload);
-  mqttPublishData(String(SENSOR_ID), strcat((char *)SENSOR_TYPE,"Value"), (const char *)O_TOPIC,
+  mqttPublishData(String(SENSOR_ID), SENSOR_TYPE_FOR_TOPIC, (const char *)O_TOPIC,
                   payload);
   return rc;
 } // end of readAndPublish

@@ -27,6 +27,7 @@ const char *MQTT_USER;
 const char *MQTT_PW;
 const char *SENSOR_NAME;
 const char *SENSOR_TYPE;
+const char *SENSOR_TYPE_FOR_TOPIC;
 const char *SENSOR_ID;
 const char *O_TOPIC;
 const char *C_RESP;
