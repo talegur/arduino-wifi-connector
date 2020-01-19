@@ -1,3 +1,6 @@
+.pioenvs/
+.sconsign.dblite
+
 # Prerequisites
 *.d
 
